@@ -6,7 +6,9 @@ function addToCollection (title, artist, yearPulbished) {
     //console.log(test); //testing 
     item = {a:title, b:artist, c:yearPulbished};
     collection.push(item);
+    console.log(collection);
     return collection;
+
 }
 
 addToCollection("Lets go", "celine", "2012");
@@ -17,3 +19,4 @@ addToCollection("4Lets go", "4celine", "42012");
 addToCollection("5Lets go", "5celine", "52012");
 
 console.log(collection);
+

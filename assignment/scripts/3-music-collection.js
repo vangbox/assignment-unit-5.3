@@ -30,3 +30,20 @@ function showCollection(hard){
 
 showCollection(collection);
 
+function findByArtist(artist){
+    let list = [];
+    for (let i = 0; i < collection.length; i++) {
+       if (Object.values(collection[i]).includes(artist)) {
+        //console.log(collection[i]); -test
+        list.push(collection[i]);
+       }
+    //else{
+      //  console.log('test2'); -test
+    //}
+    }
+    return list;
+}
+
+//findByArtist("celine"); -test
+
+console.log(findByArtist("celine"));

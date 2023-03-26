@@ -7,7 +7,7 @@ function addToCollection (title, artist, yearPulbished) {
     item = {a:title, b:artist, c:yearPulbished};
     collection.push(item);
     console.log(collection);
-    return collection;
+    return item;
 
 }
 
@@ -20,3 +20,11 @@ addToCollection("5Lets go", "5celine", "52012");
 
 console.log(collection);
 
+function showCollection(hard){
+    for (let i = 0; i < hard.length; i++) {
+        console.log(hard[i]);
+        
+    }
+
+}
+showCollection(collection);
